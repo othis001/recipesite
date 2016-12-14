@@ -17,7 +17,7 @@
   </tr>
   <% @recipes.each do |recipe| %>
     <tr class= <%= cycle('even', 'odd') %>>
-      <td><%= link_to(image_tag(recipe["image_url"], height:"100"), recipe["source_url"])%></td>
+      <td><%= link_to(image_tag(recipe["image_url"], width:"256"), recipe["source_url"])%></td>
       <td><%= link_to(recipe["title"].html_safe, recipe["source_url"])%></td>
       <td><%= recipe["social_rank"]%></td>
     <tr>
