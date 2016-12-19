@@ -1,9 +1,9 @@
 <h1>Oliver's Recipe Website</h1>
-<p> This is a website that searches for popular recipes. Please input ingredients below.</p>
+<p> This is a website that searches for popular recipes. Ingredients should be separated by commas.</p>
 
 <p>
 <%= form_tag("", :method => "get") do %>
-  <%= label_tag(:search, "Search for recipes containing (Ingredients should be separated by commas): ") %>
+  <%= label_tag(:search, "Search for recipes containing: ") %>
   <%= text_field_tag(:search, @search_term) %>
   <%= submit_tag "Search" %>
 <% end %>
@@ -24,21 +24,3 @@
   <% end %>
 </table>
 <p>Powered By Food2Fork.com</p>
-
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=11192811; 
-var sc_invisible=1; 
-var sc_security="485d33cd"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="shopify
-analytics ecommerce" href="http://statcounter.com/shopify/"
-target="_blank"><img class="statcounter"
-src="//c.statcounter.com/11192811/0/485d33cd/1/"
-alt="shopify analytics ecommerce"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
